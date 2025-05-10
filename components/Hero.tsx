@@ -7,7 +7,7 @@ import { heroImg } from "@/app/data";
 export function Hero() {
   
   return (
-    <ImagesSlider className="h-[40rem]" images={heroImg}>
+    <ImagesSlider className="  h-[32.5rem]" images={heroImg}>
       <motion.div
         initial={{
           opacity: 0,
