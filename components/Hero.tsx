@@ -101,10 +101,28 @@ export function Hero() {
           words={wordsb}
           className="text-center  max-w-60 md:max-w-72  font-sans font-light    text-sm    "/>
  
-        <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
-          <span>Joindre →</span>
+         <div className="flex gap-2">
+         <button className="p-1 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
+         <a href="https://wa.me/+242068328553" target="_blank"   rel="noopener noreferrer">
+          <img src={"/social/whatsapp.svg"} width="20" height="20"  alt="WhatsApp" />
+         </a>
           <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
         </button>
+
+        <button className="p-1 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
+         <a href="https://wa.me/+242044970070" target="_blank"   rel="noopener noreferrer">
+          <img src={"/social/whatsapp.svg"} width="20" height="20"  alt="WhatsApp" />
+         </a>
+          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
+        </button>
+       
+        <button className="p-1 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
+         <a href="https://www.facebook.com/profile.php?id=61559933272199" target="_blank"   rel="noopener noreferrer">
+          <img src={"/social/facebook.svg"} width="20" height="20"  alt="WhatsApp" />
+         </a>
+          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
+        </button>
+         </div>
       </motion.div>
     </ImagesSlider>  
  

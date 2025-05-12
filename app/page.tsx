@@ -2,8 +2,9 @@ import { Hero } from "@/components/Hero";
  import { InfiniteMovingCards } from "@/components/ui/InfiniteMovingCards";
 import { FaRegUser } from "react-icons/fa";
 import { GoHome } from "react-icons/go";
-import { testimonials } from "./data";
-import ThreedDCard from "@/components/ThreedDCard";
+import { testimonials,team } from "./data";
+import ThreedDCard from "@/components/Project";
+ import { Team } from "@/components/Team";
 
  
 const navItems = [
@@ -36,7 +37,8 @@ export default function Home() {
       />
     </div>
      
-        <ThreedDCard/>  
+        <ThreedDCard/> 
+        <Team   />
       </main>
      
   );

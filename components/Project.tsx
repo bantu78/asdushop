@@ -10,7 +10,7 @@ export default function ThreedDCard() {
   return (
 <div className="py-10 px-4 mx-auto">
  
-      <h1 className="text-2xl md:text-3xl   font-bold text-center text-white relative z-2 font-sans pb-10">
+      <h1 className="text-2xl  font-bold text-center text-white relative z-2 font-sans pb-10">
        <ColourfulText text="Réalisations" /> 
       </h1>
         <div className="flex flex-wrap gap-6 justify-center w-full   ">

@@ -69,3 +69,36 @@ export const heroImg = [
          
       ];
       
+
+      
+export const team = [
+  {
+    quote:
+      "Doté de solides compétences techniques, je veille à réaliser des ouvrages sûrs, durables et conformes aux normes. Motivé par l’innovation, je m’efforce d’optimiser chaque étape pour garantir la satisfaction du client. ",
+    name: "Juvel Chen",
+    designation: "Ingénieur en bâtiment",
+    src: "/testimonials/juvel.jpg",
+  },
+  {
+    quote:
+      "Avec une sensibilité artistique et un sens aigu du détail, il transforme ses idées en réalisations modernes et fonctionnelles. Passionné par l'esthétique et l'ergonomie, Dali cherche toujours à repousser les limites du design pour offrir des solutions à la fois belles et pratiques. ",
+    name: "Dali Bibersone",
+    designation: "Financier & Designer",
+    src: "/testimonials/dally.jpg",
+  },
+  {
+    quote:
+      "Avec son style mélangeant jazz, électro et musique acoustique, il crée des paysages sonores captivants. Son talent et sa sensibilité le reconnaissent dans la scène musicale, captivant son public à chaque performance. ",
+    name: "Mahou Mystèr",
+    designation: "Artiste Chanteur",
+    src: "/testimonials/mahou.jpg",
+  },
+   
+  {
+    quote:
+      "Développeur Web et Mobile passionné par la création de solutions innovantes. Avec une expertise technique solide, il conçoit des applications intuitives et performantes pour répondre aux besoins modernes.",
+    name: "Tendel Bantu",
+    designation: "Développeur Web & Mobile",
+    src: "/testimonials/tendel.jpg",
+  },
+];
