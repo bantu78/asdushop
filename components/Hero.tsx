@@ -5,10 +5,7 @@ import { ImagesSlider } from "./ui/ImagesSlider";
 import { heroImg } from "@/app/data";
 import { TextGenerateEffect } from "./ui/textGenerateEffect";
 import { TypewriterEffect } from "./ui/TypewriterEffect"; 
-import Particles from "react-tsparticles";
-import ParticlesBg from "./ParticlesBg";
-import Image from "next/image";
- 
+ import ParticlesBg from "./ParticlesBg";
  
 const wordsa = [
   {text: "L'Agence "},

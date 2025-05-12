@@ -47,3 +47,25 @@ export const heroImg = [
           title: "Création de Sites Web & Identité Digitale ",
         },
       ];
+
+
+      export const projects = [
+        {
+          id: 1,
+          title: "Promotion SOS design",
+          des: "Cachet personnalisé, durable et net pour entreprises et particuliers.",
+          img: "/projects/r01.jpg",
+         
+          link: "/ui.earth.com",
+        },
+        {
+          id: 2,
+          title: "Foundation MAYAYAT",
+          des: "Instant montage de bâches chez PARFAITE VSION by As Du Shop",
+          img: "/projects/r1.jpg",
+        
+          link: "/ui.yoom.com",
+        },
+         
+      ];
+      

@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { FaRegUser } from "react-icons/fa";
 import { GoHome } from "react-icons/go";
 import { testimonials } from "./data";
+import ThreedDCard from "@/components/ThreedDCard";
 
  
 const navItems = [
@@ -24,9 +25,8 @@ const navItems = [
 ];
 export default function Home() {
   return (
-       <main className="relative flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-    
-      
+       <main className="relative flex flex-col gap-[32px] row-start-2 items-center  sm:items-start">
+     
       <Hero/>
       <div className="h-[18rem] w-full rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden ">
       <InfiniteMovingCards
@@ -35,6 +35,8 @@ export default function Home() {
         speed="slow"
       />
     </div>
+     
+        <ThreedDCard/>  
       </main>
      
   );
