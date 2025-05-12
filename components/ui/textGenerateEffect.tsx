@@ -36,9 +36,9 @@ export const TextGenerateEffect = ({
       <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
            const textColorClass = 
-           idx === 0 ? 'text-[#f08125] dark:text-[#f08125]' :
-           idx === 2 ? 'text-[#1c9cdb] dark:text-[#1c9cdb]' :
-           'text-black dark:text-white';
+           idx === 0 ? 'text-[#f08125]  text-[#f08125]' :
+           idx === 2 ? 'text-[#1c9cdb]  text-[#1c9cdb]' :
+           ' text-white';
      
           return (
             <motion.span

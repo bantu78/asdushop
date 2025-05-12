@@ -7,6 +7,7 @@ import { TextGenerateEffect } from "./ui/textGenerateEffect";
 import { TypewriterEffect } from "./ui/TypewriterEffect"; 
 import Particles from "react-tsparticles";
 import ParticlesBg from "./ParticlesBg";
+import Image from "next/image";
  
  
 const wordsa = [
@@ -42,6 +43,7 @@ const wordsb = [
 {  text:"Mayama "}, 
 {  text:"Plateau "}, 
 ]
+
 export function Hero() {
   
   return (
@@ -72,10 +74,26 @@ export function Hero() {
 
          </div>
 
-         <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80  ">
+         <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80 pb-4  ">
           Bienvenue chez
           </p>
-
+          
+          <motion.img 
+ initial={{ y: -10 }}
+ animate={{ y: 10 }}
+ transition={{
+   type: "smooth",
+   repeatType: "mirror",
+   duration: 2,
+   repeat: Infinity,
+ }}
+            width={70}
+             height={70}
+               
+              src={"/logo.png"}
+              alt={"AS DU SHOP"}
+              className={"     object-cover object-center w-20 z-50 "}
+            />
           <TextGenerateEffect words="AS DU SHOP" className="font-bold  bg-clip-text text-white   py-4 text-4xl md:text-6xl "/>
        
           <p className="text-white text-center md:tracking-wider mb-4 text-sm   z-50">
@@ -84,7 +102,7 @@ export function Hero() {
          
           <TypewriterEffect
           words={wordsb}
-          className="text-center  max-w-60 md:max-w-72  font-sans font-light    text-sm   "/>
+          className="text-center  max-w-60 md:max-w-72  font-sans font-light    text-sm    "/>
  
         <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
           <span>Joindre →</span>

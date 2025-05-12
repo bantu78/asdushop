@@ -10,16 +10,11 @@
   --font-mono: var(--font-geist-mono);
  
   --animate-aurora: aurora 60s linear infinite;
-  @keyframes aurora {
-    from {
-      background-position:
-        50% 50%,
-        50% 50%;
-    }
+  --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+ 
+  @keyframes scroll {
     to {
-      background-position:
-        350% 50%,
-        350% 50%;
+      transform: translate(calc(-50% - 0.5rem));
     }
   }
 }
