@@ -41,7 +41,7 @@ body {
 /* Debugging styles - remove after fixing */
 .embla {
   max-width: 48rem;
-  margin: auto;
+  /* margin: auto; */
   --slide-height: 19rem;
   --slide-spacing: 1rem;
   --slide-size: 40%; 

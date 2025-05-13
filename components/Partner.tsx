@@ -30,7 +30,7 @@ const Partner: React.FC<PropType> = (props) => {
   } = usePrevNextButtons(emblaApi)
 
   return (
-    <div className="embla bg-">
+    <div className="embla bg- ">
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((index) => (

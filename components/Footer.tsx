@@ -7,8 +7,8 @@ import { motion } from "motion/react";
 const Footer = () => {
     const year = new Date().getFullYear();
     return (
-        <footer className='  text-white p-5'> 
-            <LampContainer className='h-100'>
+        <footer className='w-full  text-white pt-20 overflow-hidden '> 
+            <LampContainer className=' '>
                 <div className="flex flex-col">
 
                 <motion.img
@@ -19,7 +19,7 @@ const Footer = () => {
                         duration: 0.8,
                         ease: "easeInOut",
                     }}
-                    src='/logo.png' className='mx-auto h-20' alt='Company Logo' />
+                    src='/logo-b.jpg' className='mx-auto h-30     ' alt='Company Logo' />
 
                 <motion.h1
                     initial={{ opacity: 0.5, y: 100 }}
@@ -33,10 +33,7 @@ const Footer = () => {
                 >
                     AS DU SHOP
                 </motion.h1>
-
-
  
-
                 <motion.div className='text-center mt-2'
 
                     initial={{ opacity: 0.5, y: 100 }}

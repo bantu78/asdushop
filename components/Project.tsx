@@ -8,7 +8,7 @@ import { NUMB_PROJ, OPTIONS } from "@/app/data";
 export default function Project() {
   
   return (
-  <div className="pt-10 px-4 mx-auto"> 
+  <div className="pt-10 px-4  overflow-hidden md:mx-auto"> 
   
       <h1 className="text-2xl  font-bold text-center text-white relative z-2 font-sans pb-10">
        <ColourfulText text="Réalisations" /> 
