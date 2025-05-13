@@ -1,29 +1,11 @@
 import { Hero } from "@/components/Hero";
  import { InfiniteMovingCards } from "@/components/ui/InfiniteMovingCards";
-import { FaRegUser } from "react-icons/fa";
-import { GoHome } from "react-icons/go";
-import { testimonials,team } from "./data";
-import ThreedDCard from "@/components/Project";
+  import { NUMB_PART, OPTIONS,   testimonials } from "./data";
+import Project from "@/components/Project";
  import { Team } from "@/components/Team";
-
+ import Partner from "@/components/Partner";
+import { ColourfulText } from "@/components/ui/ColourfulText";
  
-const navItems = [
-  {
-   title: "Accueil",
-    href: "/",
-    icon: <GoHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
-  },
-  {
-   title: "A propos",
-    href: "#about",
-    icon: <FaRegUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
-  },
-  {
-   title: "Réalisations",
-    href: "#project",
-    icon: <FaRegUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
-  },
-];
 export default function Home() {
   return (
        <main className="relative flex flex-col gap-[32px] row-start-2 items-center  sm:items-start">
@@ -37,9 +19,18 @@ export default function Home() {
       />
     </div>
      
-        <ThreedDCard/> 
+        <Project/> 
         <Team   />
+       
+      <div className="py-20 px-4 mx-auto">
+      <h1 className="text-2xl    font-bold text-center text-white relative z-2 font-sans pb-10">
+      <ColourfulText text="Partenaires" /> 
+      </h1> 
+      <Partner  slides={  Array.from(Array(NUMB_PART).keys()) } options={OPTIONS}  />
+ 
+      </div>
+
       </main>
      
-  );
+  )
 }

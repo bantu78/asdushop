@@ -1,3 +1,12 @@
+
+import { EmblaOptionsType } from 'embla-carousel'
+
+export const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true }
+ 
+export const NUMB_PROJ  =47
+export const NUMB_PART  = 21
+ 
+
 export const heroImg = [
     "/hero-1.jpg",   "/hero-2.jpg",  "/hero-3.jpg", "/hero-4.jpg","/hero-5.jpg",
     ];
@@ -48,27 +57,7 @@ export const heroImg = [
         },
       ];
 
-
-      export const projects = [
-        {
-          id: 1,
-          title: "Promotion SOS design",
-          des: "Cachet personnalisé, durable et net pour entreprises et particuliers.",
-          img: "/projects/r01.jpg",
-         
-          link: "/ui.earth.com",
-        },
-        {
-          id: 2,
-          title: "Foundation MAYAYAT",
-          des: "Instant montage de bâches chez PARFAITE VSION by As Du Shop",
-          img: "/projects/r1.jpg",
-        
-          link: "/ui.yoom.com",
-        },
-         
-      ];
-      
+ 
 
       
 export const team = [
@@ -102,3 +91,6 @@ export const team = [
     src: "/testimonials/tendel.jpg",
   },
 ];
+
+
+ 
