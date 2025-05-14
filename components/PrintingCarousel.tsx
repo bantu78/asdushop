@@ -108,7 +108,7 @@ const PrintCarousel: React.FC<CarouselProps> = ({ slides, options }) => {
                 <div className="embla__parallax__layer">
                    
                             <img
-                            className="embla__slide__img embla__parallax__img"
+                            className="embla__slide__img embla__parallax__img3"
                             src={`/projects/impression/imp (${index+1}).jpg`}
                             alt={`Slide ${index + 1}`}
                           />

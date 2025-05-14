@@ -179,3 +179,8 @@ body {
   flex: 0 0 calc(115% + (var(--slide-spacing) * 2));
   object-fit: cover;
 }
+.embla__parallax__img3 {
+  max-width: none;
+  flex: 0 0 20px;
+  object-fit: cover;
+}
