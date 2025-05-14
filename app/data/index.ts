@@ -6,11 +6,37 @@ export const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true }
 export const NUMB_PROJ  =47
 export const NUMB_PART  = 21
  
-
 export const heroImg = [
-    "/hero-1.jpg",   "/hero-2.jpg",  "/hero-3.jpg", "/hero-4.jpg","/hero-5.jpg",
+    "/hero-1.jpg",   "/hero-2.jpg",  
     ];
  
+    
+export const socialLinks  = [
+  {
+    id: "whatsapp1",
+    href: "https://wa.me/+242068328553",
+    imgSrc: "/social/whatsapp.svg",
+    altText: "WhatsApp",
+    ariaLabel: "Chat on WhatsApp (Primary)"
+  },
+  {
+    id: "whatsapp2",
+    href: "https://wa.me/+242044970070",
+    imgSrc: "/social/whatsapp.svg",
+    altText: "WhatsApp",
+    ariaLabel: "Chat on WhatsApp (Secondary)"
+  },
+  {
+    id: "facebook1",
+    href: "https://www.facebook.com/profile.php?id=61559933272199",
+    imgSrc: "/social/facebook.svg",
+    altText: "Facebook",
+    ariaLabel: "Visit our Facebook page"
+  },
+  // Add more links as needed
+];
+
+
     export const testimonials = [
         {
           quote: `Nous concevons des visuels impactants et cohérents  <br />

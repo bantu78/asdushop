@@ -136,6 +136,7 @@ export const ImagesSlider = ({
       {areImagesLoaded && (
         <AnimatePresence>
           <motion.img
+           loading="eager"
             key={currentIndex}
             src={loadedImages[currentIndex]}
             initial="initial"
