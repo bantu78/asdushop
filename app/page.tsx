@@ -6,6 +6,7 @@ import { Team } from "@/components/Team";
 import Partner from "@/components/Partner";
 import { ColourfulText } from "@/components/ui/ColourfulText";
 import Footer from "@/components/Footer";
+ import Printing from "@/components/Printing";
 
 export default function Home() {
   return (
@@ -21,6 +22,9 @@ export default function Home() {
       </div>
 
       <Project />
+
+      <Printing />
+      
       <Team />
 
       <div className="pt-30 px-4  md:mx-auto ">

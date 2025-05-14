@@ -5,9 +5,10 @@ export const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true }
  
 export const NUMB_PROJ  =47
 export const NUMB_PART  = 21
- 
+ export const NUMB_PROJ_PRINT  =13
+  
 export const heroImg = [
-    "/hero-1.jpg",   "/hero-2.jpg",  
+    "/hero-1.jpg",   "/hero-4.jpg",  
     ];
  
     
@@ -33,7 +34,14 @@ export const socialLinks  = [
     altText: "Facebook",
     ariaLabel: "Visit our Facebook page"
   },
-  // Add more links as needed
+   {
+    id: "tiktok1",
+    href: "https://www.tiktok.com/search?q=%40as.du.shop&t=1747228805062",
+    imgSrc: "/social/tiktok.svg",
+    altText: "TikTok",
+    ariaLabel: "Visit our TikTok page"
+  },
+ 
 ];
 
 

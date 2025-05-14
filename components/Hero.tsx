@@ -7,9 +7,8 @@ import { TextGenerateEffect } from "./ui/textGenerateEffect";
 import { TypewriterEffect } from "./ui/TypewriterEffect";
  import SocialLink from "./SocialLink";
 import dynamic from "next/dynamic";
- import { FaSpinner } from "react-icons/fa";
+import {   SpinnerRoundOutlined } from 'spinners-react';
 
- 
 const wordsb = [
   { text: "+242" },
   { text: "06" },
@@ -38,10 +37,10 @@ const wordsb = [
  
 const DynamicParticlesBg = dynamic(() => import('./ParticlesBg'), {
   ssr: false,  
-    loading: () =>   <FaSpinner
-        size={48}
-        color="#f08125"
-       />
+    loading: () =>   
+    <div className="flex justify-center items-center w-full h-full"> 
+  <SpinnerRoundOutlined color="#f08125"  />
+</div>
 });
 
 export function Hero() {

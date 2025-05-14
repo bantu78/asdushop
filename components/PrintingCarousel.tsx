@@ -19,7 +19,7 @@ interface CarouselProps {
   options?: EmblaOptionsType
 }
 
-const EmblaCarousel: React.FC<CarouselProps> = ({ slides, options }) => {
+const PrintCarousel: React.FC<CarouselProps> = ({ slides, options }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
   const tweenFactor = useRef(0)
   const tweenNodes = useRef<HTMLElement[]>([])
@@ -109,7 +109,7 @@ const EmblaCarousel: React.FC<CarouselProps> = ({ slides, options }) => {
                    
                             <img
                             className="embla__slide__img embla__parallax__img"
-                            src={`/projects/affiche/affi (${index+1}).jpg`}
+                            src={`/projects/impression/imp (${index+1}).jpg`}
                             alt={`Slide ${index + 1}`}
                           />
                      
@@ -141,4 +141,4 @@ const EmblaCarousel: React.FC<CarouselProps> = ({ slides, options }) => {
   )
 }
 
-export default EmblaCarousel
+export default PrintCarousel
