@@ -4,13 +4,14 @@ import React from "react";
 import { ColourfulText } from "./ui/ColourfulText";
 import EmblaCarousel from './EmblaCarousel'
 import { NUMB_PROJ, OPTIONS } from "@/app/data";
-import DotLottie from "./DotLottie";
+import MyOptimizedLottie from "./DotLottie";
  
 export default function Project() {
   
   return (
   <div className="pt-10 px-4  overflow-hidden md:mx-auto"> 
- 
+  <MyOptimizedLottie isVisible />
+  
       <h1 className="text-2xl  font-bold text-center text-white relative z-2 font-sans pb-10">
        <ColourfulText text="Nos Affiches Publicitaires" /> 
       </h1>

@@ -1,20 +1,36 @@
 import React from 'react';
  import emojie_a from '../app/data/emojie.json'; // Or .json
-import { DotLottiePlayer } from '@dotlottie/react-player';
+ 
+ import dynamic from 'next/dynamic';
+ 
+const DynamicDotLottiePlayer = dynamic(
+  () => import('@dotlottie/react-player').then(mod => mod.DotLottiePlayer),
+  {
+    ssr: false,
+    
+  }
+);
 
-const DotLottie = () => {
-  
+interface DynamicLottieProps { 
+  isVisible: boolean; // Control visibility
+ 
+}
+
+const MyOptimizedLottie: React.FC<DynamicLottieProps> = ({  isVisible, ...props }) => {
+  if (!isVisible) {
+    return null; // Or a placeholder
+  }
 
   return (
-   <div className='mx-auto h-30 w-30' >
-      <DotLottiePlayer
-        src={emojie_a}  
-        autoplay
-        loop 
-        style={{ width: '100%', height: '100%' }}
-      />
-    </div>
+    <DynamicDotLottiePlayer
+      src={emojie_a}
+      autoplay
+      loop
+     
+      className='w-30 h-30 mx-auto '
+      {...props}
+    />
   );
 };
 
-export default DotLottie;
+export default MyOptimizedLottie;

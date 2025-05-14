@@ -181,6 +181,6 @@ body {
 }
 .embla__parallax__img3 {
   max-width: none;
-  flex: 0 0 100vw;
+  flex: 0 0 20px;
   object-fit: cover;
 }
