@@ -4,7 +4,7 @@ import { EmblaOptionsType } from 'embla-carousel'
 export const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true }
  
 export const NUMB_PROJ  =47
-export const NUMB_PART  = 21
+export const NUMB_PART  = 19
  
 export const heroImg = [
     "/hero-1.jpg",   "/hero-2.jpg",  

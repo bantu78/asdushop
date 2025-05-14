@@ -5,9 +5,10 @@ import { ImagesSlider } from "./ui/ImagesSlider";
 import { heroImg } from "@/app/data";
 import { TextGenerateEffect } from "./ui/textGenerateEffect";
 import { TypewriterEffect } from "./ui/TypewriterEffect";
-import ParticlesBg from "./ParticlesBg";
-import SocialLink from "./SocialLink";
- 
+ import SocialLink from "./SocialLink";
+import dynamic from "next/dynamic";
+ import { FaSpinner } from "react-icons/fa";
+
  
 const wordsb = [
   { text: "+242" },
@@ -32,6 +33,16 @@ const wordsb = [
   { text: "Mayama " },
   { text: "Plateau " },
 ]
+
+
+ 
+const DynamicParticlesBg = dynamic(() => import('./ParticlesBg'), {
+  ssr: false,  
+    loading: () =>   <FaSpinner
+        size={48}
+        color="#f08125"
+       />
+});
 
 export function Hero() {
 
@@ -59,8 +70,8 @@ export function Hero() {
           height: "100%",
           width: "100%",
           position: "absolute"
-        }}>
-          <ParticlesBg id="particles" />
+        }}> 
+      <DynamicParticlesBg id="particles" />
 
         </div>
 

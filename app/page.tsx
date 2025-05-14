@@ -23,7 +23,7 @@ export default function Home() {
       <Project />
       <Team />
 
-      <div className="py-20 px-4  md:mx-auto ">
+      <div className="pt-30 px-4  md:mx-auto ">
         <h1 className="text-2xl    font-bold text-center text-white relative z-2 font-sans pb-10">
           <ColourfulText text="Nos Partenaires & Nos Clients" />
         </h1>

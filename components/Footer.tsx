@@ -19,7 +19,7 @@ const Footer = () => {
                         duration: 0.8,
                         ease: "easeInOut",
                     }}
-                    src='/logo-b.jpg' className='mx-auto h-30     ' alt='Company Logo' />
+                    src='/logo-b.png' className='mx-auto h-35 rounded-full    ' alt='Company Logo' />
 
                 <motion.h1
                     initial={{ opacity: 0.5, }}
