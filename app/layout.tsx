@@ -25,6 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+       <head> 
+        <link rel="icon" href="/asdushop-icon.png" />
+       
+      </head>
+      
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased
                  bg-white dark:bg-neutral-900 text-neutral-900 dark:text-white

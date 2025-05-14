@@ -50,7 +50,7 @@ const Footer = () => {
                         <SocialLink   />
                     </div>
                     <p className='text-xs'>&copy; {year} AS DU SHOP. All rights reserved  </p>
-                 <p className='text-xs'> By Tendel Bantu</p>
+                 
                 
                 </motion.div>
 
