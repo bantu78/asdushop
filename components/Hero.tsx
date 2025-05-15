@@ -55,7 +55,7 @@ export function Hero() {
            
       <div className="z-50 flex flex-col justify-center items-center"
       >
-         <div className="absolute  inset-0 z-0   w-full h-full">
+         <div className="absolute  inset-0 z-0   w-full h-full" >
       <DynamicParticlesBg id="particles"  /> 
         </div>
 

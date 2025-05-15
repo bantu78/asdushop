@@ -10,7 +10,8 @@ import Footer from "@/components/Footer";
  import Printing from "@/components/Printing";
 import { Suspense } from "react";
 import HeroSkeleton from "@/components/HeroSkeleton";
- 
+import Flyers from "@/components/Flyers";
+   
 export default function Home() {
   return (
     <main className="relative flex flex-col gap-[32px] row-start-2 items-center  sm:items-start overflow-hidden">
@@ -27,9 +28,9 @@ export default function Home() {
       </div>
 
       <Project />
-
+  
       <Printing />
-      
+      <Flyers />
       <Team />
 
       <div className="pt-30 px-4  md:mx-auto ">

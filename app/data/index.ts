@@ -6,7 +6,8 @@ export const OPTIONS: EmblaOptionsType = { dragFree: true, loop: true }
 export const NUMB_PROJ  =47
 export const NUMB_PART  = 21
  export const NUMB_PROJ_PRINT  =13
-  
+   export const NUMB_FLY  =10
+   
 export const heroImg = [
     "/hero-1.jpg",   "/hero-4.jpg",  
     ];
@@ -54,6 +55,7 @@ export const socialLinks  = [
           🔹 Visuels pour campagnes publicitaires (Facebook Ads, Google Ads)`,
           name: "",
           title: " Communication Visuelle & Identité Graphique ",
+         
         },
 
          {
@@ -63,6 +65,7 @@ export const socialLinks  = [
             🔹 Finitions spéciales : Papier Brsitol, Papier Bristol Brillant, Papier Couché, Papier Photo.`,
           name: "",
           title: " Conception & Impression de Cartes de Visite ",
+           
         },
         {
           quote: ` Nous aidons votre entreprise à se démarquer sur le web et à toucher un large public grâce à des stratégies digitales performantes.<br />
@@ -71,6 +74,7 @@ export const socialLinks  = [
             🔹  Conception et gestion de branding digital.`,
           name: "",
           title: " Marketing Digital & Gestion des Réseaux Sociaux ",
+           
         },
         {
           quote: `Avoir un site web professionnel est essentiel pour développer votre activité et attirer de nouveaux clients. <br />
@@ -79,6 +83,7 @@ export const socialLinks  = [
             🔹 Refonte et maintenance de sites existants`,
           name: "",
           title: "Création de Sites Web & Identité Digitale ",
+          
         },
         {
           quote: `Nous fournissons du matériel essentiel pour les entreprises, garantissant efficacité et professionnalisme. <br />
@@ -88,6 +93,7 @@ export const socialLinks  = [
           `,
           name: "",
           title: "Création de Sites Web & Identité Digitale ",
+           
         },
       ];
 
@@ -118,7 +124,7 @@ export const team = [
   },
   {
     quote:
-      "Avec son style mélangeant jazz, électro et musique acoustique, il crée des paysages sonores captivants. Son talent et sa sensibilité le reconnaissent dans la scène musicale, captivant son public à chaque performance. ",
+      "Avec son style mélangeant jazz, électro et musique acoustique, il crée des paysages sonores captivants. Son talent et sa sensibilité le reconnaissent dans la scène musicale, captivant son public à chaque performance. En parallèle, en tant que manager des ressources humaines, il met sa créativité et son sens relationnel au service du développement humain au sein de son organisation.",
     name: "Mahou Mystèr",
     designation: "Artiste Chanteur",
     src: "/testimonials/mahou.jpg",

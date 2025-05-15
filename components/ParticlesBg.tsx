@@ -101,7 +101,9 @@ const ParticlesBg = (props: ParticlesComponentProps) => {
   );
 
   if (init) {
-    return <Particles id={props.id} particlesLoaded={particlesLoaded} options={options} />;
+    return <Particles id={props.id} particlesLoaded={particlesLoaded} options={options} 
+   className="w-full h-full absolute top-0 left-0"
+    />;
   }
 
   return null;

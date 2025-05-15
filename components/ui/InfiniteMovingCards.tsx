@@ -15,6 +15,7 @@ export const InfiniteMovingCards = ({
     quote: string;
     name: string;
     title: string;
+     pic?: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -100,11 +101,21 @@ export const InfiniteMovingCards = ({
   className="relative z-20 text-sm leading-[1.6] font-normal text-neutral-800 dark:text-gray-100"
   dangerouslySetInnerHTML={{ __html: testimonials[idx].quote }}
 />
+
               <div className="relative z-20 mt-6 flex flex-row items-center">
+               
+                 {/* <div className="me-3" key={item.title}>
+                  <img src={item.pic} alt="profile"  className="w-15 h-15"/>
+                </div> */}
+
                 <span className="flex flex-col gap-1">
                   <span className="text-sm leading-[1.6] font-normal text-neutral-500 dark:text-gray-400">
                     {item.name}
                   </span>
+                   
+              
+               
+              
                   <span className="text-sm leading-[1.6] font-normal text-neutral-500 dark:text-gray-400">
                     {item.title}
                   </span>
