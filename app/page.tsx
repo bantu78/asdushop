@@ -1,3 +1,4 @@
+
 import { Hero } from "@/components/Hero";
 import { InfiniteMovingCards } from "@/components/ui/InfiniteMovingCards";
 import { NUMB_PART, OPTIONS, testimonials } from "./data";
@@ -7,13 +8,17 @@ import Partner from "@/components/Partner";
 import { ColourfulText } from "@/components/ui/ColourfulText";
 import Footer from "@/components/Footer";
  import Printing from "@/components/Printing";
-
+import { Suspense } from "react";
+import HeroSkeleton from "@/components/HeroSkeleton";
+ 
 export default function Home() {
   return (
     <main className="relative flex flex-col gap-[32px] row-start-2 items-center  sm:items-start overflow-hidden">
-
-      <Hero />
-      <div className="h-[18rem] w-full rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden ">
+     <Suspense fallback={<HeroSkeleton />}>
+       <Hero />
+     </Suspense>
+     
+      <div className="  h-[18rem] w-full rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden ">
         <InfiniteMovingCards
           items={testimonials}
           direction="right"

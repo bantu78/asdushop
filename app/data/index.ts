@@ -99,7 +99,7 @@ export const team = [
     quote:
       "Michelle Essie est une professionnelle polyvalente.Forte d'une grande rigueur, elle excelle dans la gestion administrative, la coordination des activités et la prise en charge de l’accueil. En tant qu’infographiste, elle met sa créativité au service de la conception graphique, réalisant des supports visuels attractifs et professionnels pour répondre aux besoins de ses projets.",
     name: "Michelle Essie",
-    designation: "Secrétaire & infographist",
+    designation: "Secrétaire & infographiste",
     src: "/testimonials/michelle.jpg",
   },
   {

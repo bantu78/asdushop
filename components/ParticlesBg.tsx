@@ -25,6 +25,7 @@ const ParticlesBg = (props: ParticlesComponentProps) => {
 
   const options: ISourceOptions = useMemo(
     () => ({
+          fullScreen: false, 
       background: {
         
       },
@@ -51,9 +52,11 @@ const ParticlesBg = (props: ParticlesComponentProps) => {
           repulse: {
             distance: 200,
           },
+          
         },
       },
       particles: {
+        
         color: {
           value: "#d5d5d5",
         },
@@ -73,6 +76,7 @@ const ParticlesBg = (props: ParticlesComponentProps) => {
           random: true,
           speed: 1,
           straight: false,
+          
         },
         number: {
           density: {
